@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom colors for the Editorial Aesthetic (sepia book-paper, ink black, and bronze gold) */
+  --color-sepia-50: #EBE5D8;    /* Page background */
+  --color-sepia-100: #DFD9CD;   /* Secondary card backgrounds */
+  --color-sepia-150: #D5CEBF;
+  --color-sepia-200: #C5BEB0;   /* Muted borders */
+  --color-sepia-250: #B7AF9F;
+  --color-sepia-300: #ACA599;   /* Defined borders */
+  --color-sepia-350: #938B7B;
+  --color-sepia-400: #938B7B;
+  --color-sepia-500: #7A7263;
+  --color-sepia-600: #625B4E;
+  --color-sepia-700: #4B453A;
+  --color-sepia-800: #332E27;
+  --color-sepia-850: #26221C;
+  --color-sepia-900: #1A1A1A;    /* Rich ink text */
+  --color-sepia-950: #0F0E0B;
+
+  --color-gilt-50: #FCFAF5;
+  --color-gilt-100: #F6F2E5;
+  --color-gilt-200: #ECDFC1;
+  --color-gilt-300: #DEC790;
+  --color-gilt-400: #CCA95F;
+  --color-gilt-500: #856E3E;    /* Signature Accent bronze/gold */
+  --color-gilt-600: #6F5B33;
+  --color-gilt-700: #584828;
+  --color-gilt-850: #352B18;
+}
+
+/* Custom Editorial Aesthetic styling utility classes */
+.editorial-shadow {
+  box-shadow: 4px 4px 0px #856E3E;
+}
+
+.editorial-shadow-sm {
+  box-shadow: 2px 2px 0px #856E3E;
+}
+
+.editorial-shadow-lg {
+  box-shadow: 6px 6px 0px #856E3E;
+}
+
+.editorial-sepia-overlay {
+  background: rgba(44, 44, 44, 0.03);
+  mix-blend-mode: multiply;
+}
+
+.serif-title {
+  font-family: Georgia, serif;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
